@@ -21,7 +21,7 @@ Este sistema foi desenvolvido para gerenciar beneficiários e planos de saúde, 
 # Clone o repositório 
 git clone https://github.com/GustavoFhz/4t-desafios.git
 
-# Acesse a pasta do backend
+# Acesse a pasta do projeto
 cd 4t-desafios/Desafio_Tecnico_Cadastro_de_Beneficiarios
 
 # Copie o exemplo de variáveis de ambiente para criar seu .env
