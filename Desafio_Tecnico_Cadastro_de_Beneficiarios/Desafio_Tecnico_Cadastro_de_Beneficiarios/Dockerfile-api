@@ -1,5 +1,5 @@
-# Etapa de construção com o SDK 9.0
-FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
+# Etapa de construção com o SDK 8.0
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 
 # Definindo o diretório de trabalho
 WORKDIR /app
@@ -13,8 +13,8 @@ RUN dotnet restore
 # Compilar e publicar a aplicação para o diretório de saída
 RUN dotnet publish -c Release -o out
 
-# Etapa de runtime com a imagem base do ASP.NET 9.0
-FROM mcr.microsoft.com/dotnet/aspnet:9.0
+# Etapa de runtime com a imagem base do ASP.NET 8.0
+FROM mcr.microsoft.com/dotnet/aspnet:8.0
 
 # Definindo o diretório de trabalho no contêiner final
 WORKDIR /app
