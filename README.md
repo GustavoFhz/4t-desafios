@@ -33,8 +33,11 @@ DB_NAME=SeuBancoDeDados
 DB_USER=SeuLogin
 DB_PASS=SuaSenha
 
+# Restaurar pacotes
+dotnet restore
 
-
+# Aplicar migration
+dotnet ef database update
 
 # Rode a aplicação
 dotnet run
