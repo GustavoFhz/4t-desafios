@@ -11,7 +11,6 @@ Este sistema foi desenvolvido para gerenciar beneficiários e planos de saúde, 
 - **Linguagem:** C#  
 - **Frameworks:** .NET, Entity Framework  
 - **Banco de Dados:** SQL Server  
-- **Infraestrutura:** Docker, Docker Compose  
 - **Outros:** Swagger
 
 ## Como Rodar
