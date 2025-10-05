@@ -1,0 +1,43 @@
+services:
+  sqlserver:
+    build:
+      context: .
+      dockerfile: Dockerfile-sqlserver
+    container_name: sqlserver
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=${DB_PASSWORD}
+    ports:
+      - "1433:1433"
+    networks:
+      - app-network
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+    command: /opt/mssql/bin/sqlservr
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile-api
+    container_name: api
+    environment:
+      - DB_SERVER=${DB_SERVER}
+      - DB_PORT=${DB_PORT}
+      - DB_NAME=${DB_NAME}
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_TRUST_SERVER_CERTIFICATE=${DB_TRUST_SERVER_CERTIFICATE}
+    ports:
+      - "8080:8080"
+    depends_on:
+      - sqlserver
+    networks:
+      - app-network
+    command: /bin/sh -c "while ! nc -z sqlserver 1433; do sleep 1; done && dotnet Desafio_Tecnico_Cadastro_de_Beneficiarios.dll"
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  sqlserver_data:

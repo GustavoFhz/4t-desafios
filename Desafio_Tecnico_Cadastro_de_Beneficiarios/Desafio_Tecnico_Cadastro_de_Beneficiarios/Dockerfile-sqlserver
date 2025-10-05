@@ -1,0 +1,12 @@
+# Imagem oficial do SQL Server
+FROM mcr.microsoft.com/mssql/server:2022-latest
+
+# Definir as variáveis de ambiente
+ENV ACCEPT_EULA=Y
+ENV SA_PASSWORD=25840378@Gu
+
+# Expor a porta do SQL Server (1433)
+EXPOSE 1433
+
+# Comando para iniciar o SQL Server
+CMD /opt/mssql/bin/sqlservr

@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Desafio_Tecnico_Cadastro_de_Beneficiarios</name>
+    </assembly>
+    <members>
+        <member name="M:Desafio_Tecnico_Cadastro_de_Beneficiarios.Controllers.BeneficiarioController.CriarBeneficiario(Desafio_Tecnico_Cadastro_de_Beneficiarios.Dto.Beneficiario.BeneficiarioCriacaoDto)">
+            <summary>
+            Criar beneficiário
+            </summary>
+        </member>
+        <member name="M:Desafio_Tecnico_Cadastro_de_Beneficiarios.Controllers.BeneficiarioController.ListarBeneficiarios">
+            <summary>
+            Lista todos os beneficiários
+            </summary>
+        </member>
+        <member name="M:Desafio_Tecnico_Cadastro_de_Beneficiarios.Controllers.BeneficiarioController.Detalhe(System.Int32)">
+            <summary>
+            Retorna um beneficiário pelo ID
+            </summary>
+        </member>
+        <member name="M:Desafio_Tecnico_Cadastro_de_Beneficiarios.Controllers.BeneficiarioController.EditarBeneficiario(Desafio_Tecnico_Cadastro_de_Beneficiarios.Dto.Beneficiario.BeneficiarioEdicaoDto)">
+            <summary>
+            Edita um beneficiário existente
+            </summary>
+        </member>
+        <member name="M:Desafio_Tecnico_Cadastro_de_Beneficiarios.Controllers.BeneficiarioController.DeletarBeneficiario(System.Int32)">
+            <summary>
+            Deleta um beneficiário pelo ID
+            </summary>
+        </member>
+        <member name="M:Desafio_Tecnico_Cadastro_de_Beneficiarios.Controllers.PlanoController.CriarPlano(Desafio_Tecnico_Cadastro_de_Beneficiarios.Dto.Plano.PlanoCriacaoDto)">
+            <summary>
+            Criar Plano
+            </summary>
+            <param name="planoCriacaoDto"></param>
+            <returns>Criação do plano</returns>
+        </member>
+        <member name="M:Desafio_Tecnico_Cadastro_de_Beneficiarios.Controllers.PlanoController.ListarPlanos">
+            <summary>
+            Lista todos os planos
+            </summary>
+            <returns>Lista de planos</returns>
+        </member>
+        <member name="M:Desafio_Tecnico_Cadastro_de_Beneficiarios.Controllers.PlanoController.Detalhe(System.Int32)">
+            <summary>
+            Retorna um plano pelo ID
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:Desafio_Tecnico_Cadastro_de_Beneficiarios.Controllers.PlanoController.EditarPlano(Desafio_Tecnico_Cadastro_de_Beneficiarios.Dto.Plano.PlanoEdicaoDto)">
+            <summary>
+            Edita um plano existente
+            </summary>
+            <param name="planoEdicaoDto"></param>
+        </member>
+        <member name="M:Desafio_Tecnico_Cadastro_de_Beneficiarios.Controllers.PlanoController.DeletarPlano(System.Int32)">
+            <summary>
+            Deleta um plano pelo ID
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="T:Desafio_Tecnico_Cadastro_de_Beneficiarios.Migrations.InicialCreate">
+            <inheritdoc />
+        </member>
+        <member name="M:Desafio_Tecnico_Cadastro_de_Beneficiarios.Migrations.InicialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Desafio_Tecnico_Cadastro_de_Beneficiarios.Migrations.InicialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Desafio_Tecnico_Cadastro_de_Beneficiarios.Migrations.InicialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:Desafio_Tecnico_Cadastro_de_Beneficiarios.Migrations.correcao_models">
+            <inheritdoc />
+        </member>
+        <member name="M:Desafio_Tecnico_Cadastro_de_Beneficiarios.Migrations.correcao_models.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Desafio_Tecnico_Cadastro_de_Beneficiarios.Migrations.correcao_models.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Desafio_Tecnico_Cadastro_de_Beneficiarios.Migrations.correcao_models.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:Desafio_Tecnico_Cadastro_de_Beneficiarios.Migrations.correcao_das_models">
+            <inheritdoc />
+        </member>
+        <member name="M:Desafio_Tecnico_Cadastro_de_Beneficiarios.Migrations.correcao_das_models.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Desafio_Tecnico_Cadastro_de_Beneficiarios.Migrations.correcao_das_models.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Desafio_Tecnico_Cadastro_de_Beneficiarios.Migrations.correcao_das_models.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
