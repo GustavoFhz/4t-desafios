@@ -102,7 +102,7 @@ http PUT http://localhost:5000/api/plano/1 \
 Planos (Deletar Plano)
 http DELETE http://localhost:5000/api/plano/1
 
-## Observações sobre o uso do Docker
+###Observações sobre o uso do Docker
 
 Durante o desenvolvimento, realizei toda a configuração necessária para execução do projeto em containers Docker, incluindo:
 
