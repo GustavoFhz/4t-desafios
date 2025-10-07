@@ -106,9 +106,9 @@ http DELETE http://localhost:5000/api/plano/1
 
 Durante o desenvolvimento, realizei toda a configuração necessária para execução do projeto em containers Docker, incluindo:
 
-- Criação do **Dockerfile** e do **docker-compose.yml**  
-- Implementação das **variáveis de ambiente** no projeto  
-- Ajustes no **Program.cs** para permitir execução em ambiente Docker  
+- Criação do Dockerfile e do docker-compose.yml
+- Implementação das variáveis de ambiente no projeto  
+- Ajustes no Program.cs para permitir execução em ambiente Docker  
 
 No entanto, não foi possível executar o projeto via Docker na minha máquina devido a erros locais relacionados à inicialização do Docker.  
 Foram realizados diversos testes sem sucesso, mas ao executar o mesmo projeto em outro computador (macOS) de um colega, o ambiente Docker funcionou corretamente, indicando que a configuração está válida.
