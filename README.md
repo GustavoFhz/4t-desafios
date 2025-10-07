@@ -102,6 +102,22 @@ http PUT http://localhost:5000/api/plano/1 \
 Planos (Deletar Plano)
 http DELETE http://localhost:5000/api/plano/1
 
+## Observações sobre o uso do Docker
+
+Durante o desenvolvimento, realizei toda a configuração necessária para execução do projeto em containers Docker, incluindo:
+
+Criação do Dockerfile e do docker-compose.yml
+
+Implementação das variáveis de ambiente no projeto
+
+Ajustes no Program.cs para permitir execução em ambiente Docker
+
+No entanto, não foi possível executar o projeto via Docker na minha máquina devido a erros locais relacionados à inicialização do Docker.
+Foram realizados diversos testes sem sucesso, mas ao executar o mesmo projeto em outro computador de um colega (macOS) que possui o docker, o ambiente Docker funcionou corretamente, indicando que a configuração está válida.
+
+Por esse motivo, o projeto foi testado e validado localmente sem o uso do Docker, mas toda a estrutura necessária para containerização já está implementada.
+
+
 
 
 
